@@ -861,7 +861,7 @@ int tribute_helper( struct gameState *state){
                //No Card to Reveal
                if (DEBUG){
                     printf("No cards to reveal\n");
-               }
+               } 
           }
      }
 
