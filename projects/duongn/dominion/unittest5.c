@@ -9,7 +9,7 @@ int check = 0;
 /*Test Mine*/
 void printerror(int conditional, char*text) {
 	if (conditional == 0) {
-		printf("FAILD assert:  %s\n", text );
+		printf("CHECK:  %s\n", text );
 		check = 1;
 	}
 	return;
