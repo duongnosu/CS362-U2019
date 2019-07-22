@@ -23,7 +23,7 @@ int main(int argc, char const *argv[]) {
 
 	//Initialize test
 	tstGame=initializeGame(2, k, 69, gS);
-	printf("-----Testing AMBASSADOR----- %s\n" );
+	printf("-----Testing AMBASSADOR----- \n" );
 	printerror(tstGame==0," initialize conditions FAILED ");
 
 

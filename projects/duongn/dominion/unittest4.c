@@ -11,7 +11,7 @@ int check = 0;
 
 void printerror(int conditional, char*text) {
 	if (conditional == 0) {
-		printf("FAILD assert:  %s\n", text );
+		printf("CHECK :  %s\n", text );
 		check = 1;
 	}
 	return;
@@ -25,7 +25,7 @@ int main(int argc, char const *argv[]) {
 
 	//Initialize test
 	tstGame=initializeGame(2, k, 69, gS);
-	printf("-----Testing TRIBUTE----- %s\n" );
+	printf("-----Testing TRIBUTE----- \n" );
 	printerror(tstGame==0," initialize conditions FAILED ");
 
 

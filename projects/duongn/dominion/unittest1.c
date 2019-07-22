@@ -9,14 +9,13 @@ int check = 0;
 /*Test BARON*/
 void printerror(int conditional, char*text) {
 	if (conditional == 0) {
-		printf("FAILD assert:  %s\n", text );
+		printf("CHECK:  %s\n", text );
 		check = 1;
 	}
 	return;
 }
 int main(int argc, char const *argv[]) {
-	struct gameState *gS;
-	*gS = malloc(sizeof(struct gameState));
+	struct gameState *gS = malloc(sizeof(struct gameState));
 	int k[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse, sea_hag, tribute, smithy};
 
 
@@ -24,7 +23,7 @@ int main(int argc, char const *argv[]) {
 
 	//Initialize test
 	tstGame=initializeGame(2, k, 69, gS);
-	printf("-----Testing BARON----- %s\n" );
+	printf("-----Testing BARON----- \n" );
 	printerror(tstGame==0," initialize conditions FAILED ");
 
 

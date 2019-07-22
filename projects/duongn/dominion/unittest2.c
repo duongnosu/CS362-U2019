@@ -9,7 +9,7 @@ int check = 0;
 /*Test MINION*/
 void printerror(int conditional, char*text) {
 	if (conditional == 0) {
-		printf("FAILD assert:  %s\n", text );
+		printf("CHECK:  %s\n", text );
 		check = 1;
 	}
 	return;
@@ -23,7 +23,7 @@ int main(int argc, char const *argv[]) {
 
 	//Initialize test
 	tstGame=initializeGame(2, k, 69, gS);
-	printf("-----Testing MINION----- %s\n" );
+	printf("-----Testing MINION----- \n" );
 	printerror(tstGame==0," initialize conditions FAILED ");
 
 

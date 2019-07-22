@@ -23,7 +23,7 @@ int main(int argc, char const *argv[]) {
 
 	//Initialize test
 	tstGame=initializeGame(2, k, 69, gS);
-	printf("-----Testing MINE----- %s\n" );
+	printf("-----Testing MINE----- \n" );
 	printerror(tstGame==0," initialize conditions FAILED ");
 
 
@@ -35,11 +35,11 @@ int main(int argc, char const *argv[]) {
 
 	//Check for  for choice 2
 	int z = playCard(1,0,1,0,gS);
-	int h = gS->handCount;
+	int h = *gS->handCount;
 	printerror(z==-1, "incorrect choice 2. FAILED " );
 
 	//Check if increase number of handCount
-	printerror((h+2) == (gS->handCount), " gainCard +2 card  FAILED");
+	printerror((h+2) == (*gS->handCount), " gainCard +2 card  FAILED");
 
 	if(check==0){
 		printf("minion_helper PASSED" );
